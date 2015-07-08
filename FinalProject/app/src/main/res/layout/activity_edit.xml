@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="wa.filipe.finalproject.Edit"
+    android:id="@+id/id">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fusioncore" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fusioncore" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/fusioncore"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/fusioncore"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/fusioncore"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/editText" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/fusioncore"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/fusioncore"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView8"
+        android:src="@drawable/fusioncore"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Build"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Slots cost:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rank needed:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Catalyst enabled:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:onClick="onClickSave" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="0"
+        android:numeric="decimal"
+        android:password="false"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/imageView5"
+        android:layout_toStartOf="@+id/imageView5"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_above="@+id/imageView8"
+        android:layout_toStartOf="@+id/imageView7"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_alignStart="@+id/editText3"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_above="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView6"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/editText7"
+        android:layout_alignStart="@+id/editText7"
+        android:text="0"
+        android:numeric="decimal"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0/8"
+        android:id="@+id/textSlot"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignEnd="@+id/editText8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textRank"
+        android:layout_below="@+id/textSlot"
+        android:layout_alignEnd="@+id/textSlot" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/textRank" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/buttonCalc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickCalc" />
+
+</RelativeLayout>
